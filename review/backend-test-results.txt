@@ -1,0 +1,40 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> rajarata-daytrail-backend@1.0.0 test
+> node --test test/*.test.js
+
+✔ Distance identity and one degree of latitude (1.081193ms)
+✔ Place input rejects out-of-radius location (0.619909ms)
+✔ Radius boundary uses precise distance (0.190364ms)
+✔ Coordinates reject non-finite and out-of-range values (0.35319ms)
+✔ Required text cannot be whitespace (0.190112ms)
+✔ Negative duration rejected (0.220488ms)
+✔ Invalid hours rejected, unknown hours accepted (0.359755ms)
+✔ Update input ignores client slug and unrelated fields (0.239982ms)
+✔ Create generates required unique slug and preserves inactive status (8.0366ms)
+✔ Bad place input returns 400 instead of writing (0.375692ms)
+✔ Public catalogue remains active-only and search treats brackets literally (0.445441ms)
+✔ Inactive detail lookup uses active filter (0.440726ms)
+✔ Invalid detail ID returns 400 (0.140681ms)
+✔ Empty itinerary is rejected (0.31953ms)
+✔ Start time and pace validated (0.141912ms)
+✔ Nearest-next ordering chooses closer place first (0.304828ms)
+✔ Pace adjusts visit duration (0.207593ms)
+✔ Missing schedule creates no fabricated warning (0.552614ms)
+✔ Early and late arrivals produce warnings (0.278082ms)
+✔ Visit extending past closing produces warning (0.092049ms)
+✔ Overnight opening hours are handled (0.079501ms)
+✔ Plan ending next day explicitly warns (0.290181ms)
+✔ Return journey included in timing (0.081915ms)
+✔ Generate rejects unavailable selections rather than silently dropping them (0.274519ms)
+✔ Generate rejects malformed ID (0.121124ms)
+✔ Save recomputes totals and records current owner (3.508986ms)
+✔ Authenticated-only all-places route rejects anonymous HTTP request (32.271479ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 372.908319
